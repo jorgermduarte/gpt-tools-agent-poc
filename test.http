@@ -1,0 +1,65 @@
+### Teste simples com consulta e notificação
+POST http://localhost:3000/prompt
+Content-Type: application/json
+
+{
+  "prompt": "Quantos clientes existem? Envia uma mensagem ao admin com o numero de clientes."
+}
+
+### Teste simples com consulta e notificação
+POST http://localhost:3000/prompt
+Content-Type: application/json
+
+{
+  "prompt": "Que tabelas existem na base de dados? e quais os campos delas? Envia uma mensagem ao admin com o resumo."
+}
+
+### Teste simples com consulta e notificação
+POST http://localhost:3000/prompt
+Content-Type: application/json
+
+{
+  "prompt": "Quais os nomes dos clientes que existem? Ve primeiro as colunas que a tabela tem. Depois Envia uma mensagem ao admin com os nomes."
+}
+
+### Teste só com query SQL
+POST http://localhost:3000/prompt
+Content-Type: application/json
+
+{
+  "prompt": "Diz-me quantos registos existem na tabela clientes ."
+}
+
+### Teste só com notificação
+POST http://localhost:3000/prompt
+Content-Type: application/json
+
+{
+  "prompt": "Envia uma mensagem ao admin a dizer que o sistema está online."
+}
+
+### Teste inválido (sem prompt)
+POST http://localhost:3000/prompt
+Content-Type: application/json
+
+{
+  "mensagem": "faltou o campo prompt"
+}
+
+### Teste só com notificação
+POST http://localhost:3000/prompt
+Content-Type: application/json
+
+{
+  "prompt": "Envia uma mensagem ao admin a dizer que ele é lindo."
+}
+
+
+
+### Teste só com notificação
+POST http://localhost:3000/prompt
+Content-Type: application/json
+
+{
+  "prompt": "Manda uma imagem de um gato aleatorio para o admin."
+}
